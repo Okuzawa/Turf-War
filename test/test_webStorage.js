@@ -11,6 +11,6 @@ let msg = document.getElementById('msg');
 let checkButton = document.getElementById('checkButton');
 checkButton.addEventListener('click', butotnClick);
 
-localStorage.setItem('key', 'value');
-localStorage.getItem('key');
-localStorage.removeItem('key');
+//localStorage.setItem('key', 'value');
+//localStorage.getItem('key');
+//localStorage.removeItem('key');

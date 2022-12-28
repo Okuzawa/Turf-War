@@ -3,7 +3,6 @@ function butotnClick(){
 }
 
 let nameText = document.getElementById('nameText');
-nameText.value = '名前';
 let msg = document.getElementById('msg');
 
 let checkButton = document.getElementById('checkButton');

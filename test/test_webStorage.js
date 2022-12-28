@@ -1,8 +1,7 @@
 function userNameSet(){
   let test_key = nameText.value;
   if(localStorage.hasOwnProperty('test_key')) {
-    console.log('このキーは存在しています');
-    msg.innerText = 'この名前は既に使われているよ';
+    msg.innerText = test_key + 'は既に使われているよ';
   }
   else {
     let value = localStorage.length;

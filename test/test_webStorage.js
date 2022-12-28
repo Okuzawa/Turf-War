@@ -29,7 +29,3 @@ let setButton = document.getElementById('setButton');
 setButton.addEventListener('click', userNameSet);
 let getButton = document.getElementById('getButton');
 getButton.addEventListener('click', userNameGet);
-
-//localStorage.setItem('key', 'value');
-//localStorage.getItem('key');
-//localStorage.removeItem('key');

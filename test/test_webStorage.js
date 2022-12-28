@@ -13,8 +13,8 @@ function userNameSet(){
 function userNameGet(){
   let test_key = nameText.value;
   if(localStorage.hasOwnProperty('test_key')) {
-    string value = localStorage.getItem('test_key');
-    msg.innerText = test_key + 'さんのidは' + value + 'だよ';
+    let value = localStorage.getItem('test_key');
+    msg.innerText = test_key + 'さんのidは' + String(value) + 'だよ';
   }
   else {
     msg.innerText = test_key + 'は存在しないアカウントだよ';

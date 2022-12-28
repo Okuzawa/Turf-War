@@ -26,9 +26,10 @@ function userNameGet(){
 let nameText = document.getElementById('nameText');
 let msg = document.getElementById('msg');
 
-let checkButton = document.getElementById('checkButton');
-checkButton.addEventListener('SetName', userNameSet);
-checkButton.addEventListener('GetName', userNameGet);
+let setButton = document.getElementById('setButton');
+setButton.addEventListener('click', userNameSet);
+let getButton = document.getElementById('getButton');
+getButton.addEventListener('click', userNameGet);
 
 //localStorage.setItem('key', 'value');
 //localStorage.getItem('key');

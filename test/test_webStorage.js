@@ -1,6 +1,6 @@
 function userNameSet(){
   let test_key = nameText.value;
-  if(localStorage.hasOwnProperty('test_key')) {
+  if(localStorage.hasOwnProperty(test_key)) {
     msg.innerText = test_key + 'は既に使われているよ';
   }
   else {
@@ -12,8 +12,9 @@ function userNameSet(){
 
 function userNameGet(){
   let test_key = nameText.value;
-  if(localStorage.hasOwnProperty('test_key')) {
-    let value = localStorage.getItem('test_key');
+  if(localStorage.hasOwnProperty(test_key)) {
+    let value = localStorage.getItem(test_key);
+    console.log(value)
     msg.innerText = test_key + 'さんのidは' + String(value) + 'だよ';
   }
   else {

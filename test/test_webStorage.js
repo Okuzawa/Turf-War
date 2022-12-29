@@ -19,6 +19,12 @@ function userNameGet(){
   else {
     msg.innerText = test_key + 'は存在しないアカウントだよ';
   }
+
+  for (var key in localStorage) {
+    if (localStorage.hasOwnProperty(key)) {
+        console.log(key);
+    }
+  }
 }
 
 

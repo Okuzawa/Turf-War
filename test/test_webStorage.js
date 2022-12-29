@@ -5,7 +5,7 @@ function userNameSet(){
   }
   else {
     let value = localStorage.length;
-    localStorage.setItem(test_key, value);
+    localStorage.setItem(key, value);
     msg.innerText = key + 'さんのidを' + value + 'で登録したよ';
   }
 }

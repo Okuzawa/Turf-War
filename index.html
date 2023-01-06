@@ -6,9 +6,18 @@
       <title>home</title>
   </head>
   <style>
-    iframe {
-      transform-origin: 0 0;
-      transform: scale(0.25);
+    #iframeBlock{
+      height:100%;
+      .iframeBody{
+        height:100%;
+        iframe{
+          border:none;
+        　width:100%;
+        　height:100%;
+        　padding:0;
+        　margin:0;
+        　}
+    　　}
     }
   </style>
   <body>
@@ -16,7 +25,11 @@
       <button onclick="location.href='tetris/tetris.html'">テトリス</button>
       <button onclick="location.href='test/test.html'">テスト</button>
     </div>
-    <iframe src="tetris/tetris.html" width="375" height="500"></iframe>
+    <div id="iframeBlock">
+      <div class="iframeBody">
+        <iframe src="tetris/tetris.html" width="375" height="500"></iframe>
+      </div>
+    </div>
     <script ></script>
   </body>
 </html>

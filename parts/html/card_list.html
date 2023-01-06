@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>deck_edit</title>
+      <style>
+        .container {
+ 	    background-color: #008b8b;
+  	    width: 468px;
+  	    height:600px;
+  	    border: solid 5px #006400;
+  	    display: flex;
+  	    flex-wrap: wrap;
+  	    overflow-y: scroll;
+	   }
+	   .js-based {
+ 	    display: none;
+	   }
+        .card-item {
+ 	    background-color: #808080;
+  	    width: 150px;
+  	    height:250px;
+  	    border: solid 3px #b0c4de;
+	   }
+        .card-item canvas{
+ 	    background-color: #696969;
+  	    width: 130px;
+  	    height: 130px;
+	   }
+	   .card-item .ttl {
+	    font-size: 25px;
+	    line-height: 0.01;
+	   }
+	   .card-item p {
+	    line-height: 0.25;
+	   }
+	   .card-item div {
+	    display:inline-block;
+	   }
+      </style>
+  </head>
+  <body>
+   <div class="container">
+    <button class="card-item js-based">
+     <canvas></canvas>
+     <p class="ttl">name</p>
+     <div><p><font size="8">00</font></p></div>
+     <div><p><font size="4">消費SP</p><p>00</font></p></div>
+    </button>
+    <button class="card-item">
+     <canvas></canvas>
+     <p class="ttl">name</p>
+     <div><p><font size="8">00</font></p></div>
+     <div><p><font size="4">消費SP</p><p>00</font></p></div>
+    </button>
+   </div>
+  </body>
+</html>
